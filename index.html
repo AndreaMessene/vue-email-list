@@ -13,6 +13,7 @@
     <div id="app">
         <ul>
             <!-- criamo un ciclo che ci permettera di stampare tante <li> di email tante quante email sono presenti nel nostro arrey   -->
+            <!-- usaimo una condizione in modo tale da far apparire la nostra lista in modo unico e non con una visione a cascata -->
             <li v-for="(element, index) in email" :key="index" v-if=" email.length === 10 ">{{element}}</li>
         </ul>
         
