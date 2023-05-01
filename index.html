@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <ul>
+            <!-- criamo un ciclo che ci permettera di stampare tante <li> di email tante quante email sono presenti nel nostro arrey   -->
+            <li v-for="(element, index) in email" :key="index" v-if=" email.length === 10 ">{{element}}</li>
+        </ul>
+        
+    </div>
+
+
+
+
+
+
+
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- vue -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- js -->
+    <script src="./assets/main.js"></script>
+</body>
+</html>
